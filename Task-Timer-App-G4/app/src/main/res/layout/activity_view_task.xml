@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorNew"
+    android:layout_height="match_parent"
+    tools:context=".ViewTask">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.skydoves.elasticviews.ElasticLayout
+            android:id="@+id/ltv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_cornerRadius="4dp"
+            app:layout_duration="500"
+            app:layout_scale="0.85"
+            tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/brown"
+        android:text="All Task"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="36sp" />
+        </com.skydoves.elasticviews.ElasticLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
